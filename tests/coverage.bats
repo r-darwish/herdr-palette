@@ -15,7 +15,7 @@ setup() {
 @test "OK on the repository's own catalog and coverage list" {
   run bash "$ROOT/scripts/check-coverage.sh"
   [ "$status" -eq 0 ]
-  [[ "$output" == "OK: herdr 0.8.0 key actions are accounted for"* ]]
+  [[ "$output" == "OK: herdr 0.9.0 key actions are accounted for"* ]]
 }
 
 @test "FAILs when herdr declares a key action that is neither exposed nor classified" {

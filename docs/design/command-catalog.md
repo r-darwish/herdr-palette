@@ -113,7 +113,7 @@ The top level of `commands.json` has this shape:
 ```json
 {
   "schema_version": 1,
-  "expected_herdr_protocol": 20,
+  "expected_herdr_protocol": 22,
   "commands": []
 }
 ```
@@ -122,7 +122,7 @@ The top level of `commands.json` has this shape:
 value is `1`; the palette and the compatibility check accept only `1`.
 
 **`expected_herdr_protocol`**: the herdr socket API protocol this catalog assumes. The value
-confirmed on herdr 0.8.0 is `19`. The palette and the compatibility check both refer to this
+confirmed on herdr 0.9.0 is `22`. The palette and the compatibility check both refer to this
 single value.
 
 **`commands`**: an array of command definitions. The array order is fzf's initial display

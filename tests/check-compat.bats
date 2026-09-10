@@ -20,14 +20,14 @@ teardown() {
 @test "OK on the real catalog against the stub" {
   run bash "$ROOT/scripts/check-compat.sh"
   [ "$status" -eq 0 ]
-  [[ "$output" == "OK: herdr 0.8.0 is compatible (protocol 20)" ]]
+  [[ "$output" == "OK: herdr 0.9.0 is compatible (protocol 22)" ]]
 }
 
 @test "OK when computed context keys supply focus positionals" {
   FIXTURE_REPO="$(setup_fixture_repo "$ROOT/tests/fixtures/schema/valid-computed-context.json")"
   run bash "$FIXTURE_REPO/scripts/check-compat.sh"
   [ "$status" -eq 0 ]
-  [[ "$output" == "OK: herdr 0.8.0 is compatible (protocol 20)" ]]
+  [[ "$output" == "OK: herdr 0.9.0 is compatible (protocol 22)" ]]
 }
 
 @test "FAILs when tab list does not support workspace scoping" {
@@ -43,7 +43,7 @@ teardown() {
   export HERDR_STUB_PROTOCOL
   run bash "$ROOT/scripts/check-compat.sh"
   [ "$status" -ne 0 ]
-  [[ "$output" == *"protocol mismatch: commands.json expects 20, herdr reports 21"* ]]
+  [[ "$output" == *"protocol mismatch: commands.json expects 22, herdr reports 21"* ]]
 }
 
 @test "FAILs when a catalog default key drifts from herdr --default-config" {

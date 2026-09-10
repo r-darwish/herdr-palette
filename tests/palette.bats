@@ -27,7 +27,7 @@ write_navigation_catalog() {
   jq -n --arg group "$group" --arg key "$key" '
     {
       schema_version: 1,
-      expected_herdr_protocol: 20,
+      expected_herdr_protocol: 22,
       commands: [{
         id: "navigation.test",
         title: "Navigation test",

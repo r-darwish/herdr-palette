@@ -33,7 +33,7 @@ write_catalog() {
   cat >"$TEST_PLUGIN_ROOT/commands.json" <<'JSON'
 {
   "schema_version": 1,
-  "expected_herdr_protocol": 20,
+  "expected_herdr_protocol": 22,
   "commands": [
     {
       "id": "tab.new",
