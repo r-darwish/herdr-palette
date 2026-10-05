@@ -12,6 +12,7 @@
     { "keys_action": "resize_mode", "reason": "no-cli", "note": "Enters a client input mode; pane resize itself is covered by pane.resize.*." },
     { "keys_action": "toggle_sidebar", "reason": "no-cli", "note": "Client layout toggle." },
     { "keys_action": "edit_scrollback", "reason": "no-cli", "note": "Opens the pane scrollback in $EDITOR from the client." },
+    { "keys_action": "clear_pane", "reason": "no-cli", "note": "No pane clear subcommand as of herdr 0.9.3; the key sends pane.clear over the socket, which the catalog does not drive." },
     { "keys_action": "copy_mode", "reason": "no-cli", "note": "Enters keyboard copy mode in the client." },
     { "keys_action": "open_notification_target", "reason": "no-cli", "note": "notification show posts a notification; nothing focuses the visible one." },
     { "keys_action": "navigate_workspace_up", "reason": "no-cli", "note": "Movement inside navigate mode, a client surface." },
